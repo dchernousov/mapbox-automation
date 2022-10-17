@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    options {
+        skipStagesAfterUnstable()
+    }
+     stage('Mobile Testing') {
+      steps {
+        script {
+          if (currentBuild.result == null
+              || currentBuild.result == 'SUCCESS') {
+          // Start Android emulator and Appium testing tools
+          sh 'emulator @Pixel_2_API_28'
+          sh 'appium &'
+
+          // You're set to go, now execute your UI test
+          sh 'gradle clean test'
+          }
+        }
+      }
+}
