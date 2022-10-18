@@ -4,7 +4,6 @@ import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 

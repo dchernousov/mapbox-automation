@@ -7,12 +7,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class GoogleMapScreen {
 
-/*    private static void skipWelcomeScreen(){
-
-        $(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.Button")).click();
-
-    }*/
-
     @Step("Verify Google Logo on Main Map screen")
     public static boolean isGoogleLogoPresent(){
 
